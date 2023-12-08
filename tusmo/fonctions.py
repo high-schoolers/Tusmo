@@ -49,10 +49,8 @@ def mot_correct(mot, solution):
         print(mot[i],":",lettre_correcte(mot,i,solution))
         if lettre_correcte(mot,i,solution) == 2 :
             cnt_correct += 1
-    if cnt_correct == len(mot):
-        return True
-    else :
-        return False
+    return cnt_correct == len(mot):
+       
 
 
 
