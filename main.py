@@ -17,7 +17,7 @@ print(solution)
 
 # Lancement du jeu
 win = False
-while win:
+while not win:
     essai = input("Entrez un mot : ")
     if mot_correct(essai, solution):
         print("Bravo, vous avez trouvé !")
