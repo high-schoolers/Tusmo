@@ -1,4 +1,4 @@
-mots_4=[
+mots_4 = [
     'chat',
     'pied',
     'vent',
@@ -24,7 +24,7 @@ mots_4=[
     'rose',
     'feux',
     'dent']
-mots_5=[
+mots_5 = [
     "table",
     "fleur",
     "lampe",
@@ -50,7 +50,7 @@ mots_5=[
     "grain",
     "monte",
     "glace"]
-mots_6=[
+mots_6 = [
     "bonjour",
     "orange",
     "soleil",
@@ -76,7 +76,7 @@ mots_6=[
     "chaque",
     "écrire"]
 
-mots_7=[
+mots_7 = [
     "chaleur",
     "livreur",
     "justice",
@@ -101,7 +101,7 @@ mots_7=[
     "ventral",
     "voiture",
     "voyager"]
-mots_8=[
+mots_8 = [
     "urbanise",
     "jardinier",
     "esquiver",
