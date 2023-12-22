@@ -17,17 +17,18 @@ def lettre_correcte(mot, place, solution):
     Le statut de la lettre : int
         0 si absente, 1 si mal placée, 2 si bien placée
     """
-    if mot[place] not in solution :
-        #la lettre n'est pas dans le mot-solution
+    if mot[place] not in solution:
+        # la lettre n'est pas dans le mot-solution
         return 0
-    else :
+    else:
         # la lettre est dans le mot-solution
         if mot[place] == solution[place]:
-            #la lettre est bien placée
+            # la lettre est bien placée
             return 2
-        else :
+        else:
             # la lettre est mal placée
             return 1
+
 
 def mot_correct(mot, solution):
     """Teste si le mot entré par l'utilisateur est correct
@@ -46,8 +47,7 @@ def mot_correct(mot, solution):
     """
     cnt_correct = 0     # le nombre de lettres bien placées
     for i in range(len(mot)):
-        print(mot[i],":",lettre_correcte(mot,i,solution))
-        if lettre_correcte(mot,i,solution) == 2 :
+        print(mot[i], ":", lettre_correcte(mot, i, solution))
+        if lettre_correcte(mot, i, solution) == 2:
             cnt_correct += 1
-    return cnt_correct == len(mot)
-        
+    return cnt_correct == len(mot)        

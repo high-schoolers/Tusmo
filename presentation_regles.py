@@ -1,19 +1,23 @@
 from time import*
 
+
 def intro():
     print("Bonjour! Bienvenue dans le TUSMO. Avez-vous besoin des règles?")
     sleep(0.5)
     ans = str(input("Oui ou Non? "))
     if ans == "oui" or ans == "Oui" or ans == "OUI":
-        print("Le TUSMO, aussi connu sous le nom de Wordle, est un jeu où l'objectif est de deviner un mot.")
+        print("Le TUSMO, aussi connu sous le nom de Wordle, est un jeu où "
+              "l'objectif est de deviner un mot.")
         sleep(0.5)
-        print("Vous commencez par choisir la longueur du mot, puis vous mettez votre réponse.")
+        print("Vous commencez par choisir la longueur du mot, puis vous "
+              "mettez votre réponse.")
         sleep(0.5)
         print("La lettre sera grise si elle n'est pas présente dans le mot.")
         sleep(0.5)
         print("Elle sera jaune si elle est presénte mais au mauvais endroit.")
         sleep(0.5)
         print("Elle sera bleue si elle est au bon endroit.")
+
 
 def difficultes():
     print("Il y a différentes difficultés :")
@@ -24,7 +28,8 @@ def difficultes():
     sleep(0.5)
     print("Difficile : 4 tentatives")
     sleep(0.5)
-    print("Hardcore : 4 tentatives. Vous êtes forcé de garder les lettres déjà trouvées.")
+    print("Hardcore : 4 tentatives. Vous êtes forcé de garder les lettres "
+          "déjà trouvées.")
     sleep(0.5)
     while True:
         diff = int(input("Choisissez 1,2,3 ou 4 : "))
