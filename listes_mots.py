@@ -1,4 +1,4 @@
-mots_4 = [
+mots_4=[
     'chat',
     'pied',
     'vent',
@@ -14,7 +14,7 @@ mots_4 = [
     'bras',
     'murs',
     'port',
-    'vins',
+    'loup',
     'robe',
     'jour',
     'coco',
@@ -24,7 +24,7 @@ mots_4 = [
     'rose',
     'feux',
     'dent']
-mots_5 = [
+mots_5=[
     "table",
     "fleur",
     "lampe",
@@ -50,17 +50,17 @@ mots_5 = [
     "grain",
     "monte",
     "glace"]
-mots_6 = [
-    "bonjour",
+mots_6=[
+    "putois",
     "orange",
     "soleil",
-    "fenêtre",
+    "farine",
     "voyage",
     "auteur",
     "chemin",
     "souris",
     "jouets",
-    "gâteau",
+    "gateau",
     "champs",
     "amical",
     "vivant",
@@ -74,9 +74,9 @@ mots_6 = [
     "peuple",
     "statue",
     "chaque",
-    "écrire"]
+    "ecrire"]
 
-mots_7 = [
+mots_7=[
     "chaleur",
     "livreur",
     "justice",
@@ -101,9 +101,9 @@ mots_7 = [
     "ventral",
     "voiture",
     "voyager"]
-mots_8 = [
+mots_8=[
     "urbanise",
-    "jardinier",
+    "jardiner",
     "esquiver",
     "abordage",
     "studieux",
