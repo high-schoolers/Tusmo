@@ -53,4 +53,22 @@ def mot_correct(mot, solution):
         if lettre == 2:
             cnt_correct += 1
         nb.append(lettre)
-    print(nb)    return cnt_correct == len(mot)        
+    print(nb)    return cnt_correct == len(mot)   
+
+def diff4(solution,guess,t):
+    for i in range(len(solution)):
+        lettre = solution[i]
+        for j in range(len(guess)):
+            if guess[j] == guess[i]:
+                if guess[j] == lettre:
+                    t[i] = 2
+                    pass
+    return t
+
+def diff_check(guess,solution,t):
+    good = True
+    for i in range(len(t)):
+        if t[i] == 2:
+            if guess[i] != solution[i]:
+                good = False
+    return good
