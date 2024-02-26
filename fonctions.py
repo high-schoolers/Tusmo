@@ -45,9 +45,12 @@ def mot_correct(mot, solution):
     True si l'utilisateur trouve le bon mot
     False si l'utilisateur n'as pas trouvé le mot
     """
+    global nb
     cnt_correct = 0     # le nombre de lettres bien placées
     for i in range(len(mot)):
-        print(mot[i], ":", lettre_correcte(mot, i, solution))
-        if lettre_correcte(mot, i, solution) == 2:
+        lettre = lettre_correcte(mot, i, solution)
+        print(mot[i], ":", lettre)
+        if lettre == 2:
             cnt_correct += 1
-    return cnt_correct == len(mot)        
+        nb.append(lettre)
+    print(nb)    return cnt_correct == len(mot)        
