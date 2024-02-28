@@ -45,30 +45,27 @@ def jeu(tours,solution,diff):
                 break
     return win,tours
 
-intro()
-while True:
-    diff = difficultes()
-    if diff == 1:
-        tours = 8
-    if diff == 2:
-        tours = 6
-    if diff == 3 or diff == 4:
-        tours = 4
-    print("--------------------------------------------------------")
-    print("Début du jeu : ")
-    print(" ")
-    print(" ")
-    taille = int(input("Entrez le nombre de lettres que vous souhaitez (entre 4 et 8): "))
-    solution = mots[taille-4][randint(0,25)]
-    win,tours = jeu(tours,solution,diff)
-    if win == True:
-        print("Gagné! :)")
-        print("Tours restants ->",tours)
-    if win == False:
-        print("Perdu! Le mot était : ",solution)
-    print("Voulez-vous refaire une partie?")
-    ans = str(input("Oui ou Non? : "))
-    if ans == "non" or ans == "Non" or ans == "NON":
-        break
-    else:
-        print("UwU")
+def tusmo() :
+    intro()
+    while True:
+        diff = difficultes()
+        if diff == 1:
+            tours = 8
+        if diff == 2:
+            tours = 6
+        if diff == 3 or diff == 4:
+            tours = 4
+        print("--------------------------------------------------------")
+        print("Début du jeu : ")
+        print(" ")
+        print(" ")
+        taille = int(input("Entrez le nombre de lettres que vous souhaitez (entre 4 et 8): "))
+        solution = mots[taille-4][randint(0,25)]
+        win,tours = jeu(tours,solution,diff)
+        if win == True:
+            print("Gagné! :)")
+        elif win == False:
+            print("Perdu! Le mot était : ",solution)
+        return win
+       
+
