@@ -35,7 +35,8 @@ def jeu(tours,solution,diff):
 
             
         if mot_correct(guess,solution) == True:
-            win == True
+            win = True
+            break
         else:
             tours -= 1
             if diff == 4:
