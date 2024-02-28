@@ -35,7 +35,7 @@ def difficultes():
         tours = 4
     else :
         diff = int(input("Choisissez 1,2,3 ou 4 : "))
-    return tours
+    return (diff,tours)
 
 
 from fonctions import mot_correct, lettre_correcte
