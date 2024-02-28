@@ -56,34 +56,36 @@ def tusmo():
     # et 8 lettres)
     taille = int(input("Entrez le nombre de lettres que vous souhaitez (entre 4 et 8): "))
     solution = mots[taille-4][randint(0,25)]
-
-    # Si la difficulté 4 a été choisie :
-    if niveau4(nb_essais,solution,diff):
-        print("Bravo, vous avez trouvé !")
-        return True
     
-    else :
-        if diff == 4 :
+    if diff == 4 :
+        if niveau4(nb_essais,solution,diff):
+            print("Bravo, vous avez trouvé !")
+            return True
+    
+        else :
             print("Nombre d'essais dépassé.")
             print("Le mot était",solution)
             return False
         
-    # Lancement du jeu
-    win = False
-    tour = 0
-    while not win and tour < diff :
-        essai = input("Entrez un mot : ")
-        if len(essai) != taille :
-            print("Taille du mot incorrecte")
-        elif mot_correct(essai,solution) == True :
-            print("Bravo, vous avez trouvé !")
-            win = True
-        else :
-            print("Dommage, ce n'est pas le bon mot. Réessayez.")
-        tour += 1
-    if not win :
-        print("Nombre d'essais dépassé.")
-        print("Le mot était",solution)
+    else :
+        # Lancement du jeu
+        win = False
+        tour = 0
+        while not win and tour < nb_essais :
+            essai = input("Entrez un mot : ")
+            if len(essai) != taille :
+                print("Taille du mot incorrecte")
+            elif mot_correct(essai,solution) == True :
+                print("Bravo, vous avez trouvé !")
+                win = True
+            else :
+                if not(tour == nb_essais-1):
+                    print("Dommage, ce n'est pas le bon mot. Réessayez.")
+            tour += 1
+            print("Essais restants :",nb_essais-tour)
+        if not win :
+            print("Nombre d'essais dépassé.")
+            print("Le mot était",solution)
     return win
 
             
