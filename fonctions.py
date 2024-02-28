@@ -1,4 +1,4 @@
-
+import pygame
 def lettre_correcte(mot, place, solution):
     """Teste si la lettre du mot rentré par l'utilisateur se
     trouve dans le mot-solution et si elle est bien placée
@@ -71,7 +71,7 @@ def diff_check(guess,solution,t):
                 good = False
     return good
 
-def dessiner_tentative(tentatives, solution, taille, diff):
+def dessiner_tentative(tentatives, solution, taille, diff, fenetre, largeur_fen, hauteur_fen):
     """Affiche les tentatives du joueur dans la fenetre Pygame
 
     Paramètres
@@ -84,7 +84,11 @@ def dessiner_tentative(tentatives, solution, taille, diff):
         longueur du mot à trouver
     diff : int
         nombre de tentatives autorisées en fonction de la difficulté du jeu
-
+    largeur_fen : int
+        largeur de la fenetre pygame
+    hauteur_fen : int
+        hauteur de la fenetre pygame
+    
     Retourne
     --------
     dessine les tentatives de l'utilisateur sur la fenêtre Pygame,
